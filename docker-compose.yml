@@ -1,0 +1,7 @@
+services:
+  kickstats:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8025:80/tcp

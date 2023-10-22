@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Merriweather', 'Times New Roman', 'Times', 'Liberation Serif', 'Serif';
+    background-color: #FBFBFA;
+}
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+p {
+    margin-bottom: 1.5em;
+}
+a, a:visited, a:active {
+    color: inherit;
+}
+
+.bordered {
+    border-bottom: 1px solid #E8E8E8;
+}
+.thicc {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+.center {
+    text-align: center;
+}
+.nav-item {
+    font-family: "Open Sans", Arial, Helvetica, Sans;
+    color: #656969;
+    margin-left: 2em;
+    margin-right: 2em;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.nav-item a {
+    text-decoration: none;
+    border-bottom: 0;
+    transition: border-bottom 0.25s ease-in-out;
+}
+.nav-item a:hover {
+    color: #037362;
+    border-bottom: 3px solid #037362;
+}
+@media screen and (max-width: 500px) {
+    .author-name {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+}
+.content-block {
+    padding: 2em 2.5vw;
+}
+.shiny-app {
+    border: 3px solid #037362;
+    display: block;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+.big-button {
+    font-family: "Open Sans", Arial, Helvetica;
+    border: 3px solid #037362;
+    padding: 1em;
+    text-decoration: none;
+    background-color: #037362;
+    color: white;
+    transition: background-color 0.1s ease-in, color 0.1s ease-in, text-decoration 0.1s ease-in;
+}
+.big-button:hover {
+    text-decoration: underline;
+}
+.big-button::after {
+    margin-bottom: 1em;
+}
+
+.multi-button {
+    margin-bottom: 0.25em;
+    display: inline-block;
+    font-family: "Open Sans", Arial, Helvetica;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #037362;
+    transition: text-decoration 0.1s ease-in;
+}
+.multi-button .subtitle {
+    font-size: 0.8em;
+}
+.multi-button p {
+    margin: 0;
+}
+.multi-button .multi-component {
+    font-size: 0.7em;
+    color: inherit;
+    text-decoration: none;
+}
+a.multi-component {
+    padding-right: 0.5em;
+}
+a.multi-component:hover {
+    text-decoration: underline;
+}
+a.multi-component.singular {
+    font-size: 1em;
+}
+@media screen and (min-width: 500px) {
+    .flex-parent {
+        display: flex;
+    }
+    .flex-parent.horizontal {
+        flex-direction: row;
+    }
+    .grow {
+        flex-grow: 1;
+    }
+}
+
+#header-bar {
+    background-color: white;
+}
+#header-bar img {
+    display: inline-block;
+    height: 1.5em;
+}
